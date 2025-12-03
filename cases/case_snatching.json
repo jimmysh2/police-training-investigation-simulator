@@ -1,0 +1,49 @@
+{
+  "id": "case_snatching",
+  "title": "Mobile Snatching near Market Road",
+  "summary": "Victim reported mobile snatching on 2025-11-20 at 2130 hrs near Market Road. Two suspects on a motorcycle.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "FIR received. Victim: Ramesh; Time: 2130; Place: Market Road; Two male suspects on a motorcycle.",
+      "question": "What is your immediate next step?",
+      "options": [
+        "Visit the Scene of Crime (SOC) and record observations",
+        "Collect CDRs immediately from the provider",
+        "File a charge sheet against unknown accused",
+        "Start media outreach for CCTV request"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Before technical requests, an SOC visit is mandatory to preserve evidence and gather witness names.",
+      "next_info": "SOC conducted: Nearby shopkeeper remembers a red motorcycle and a CCTV camera facing the road; footage stored offsite at the mall."
+    },
+    {
+      "id": "s2",
+      "info": "SOC: Partial plate 'DL3S'; mall CCTV may hold footage.",
+      "question": "Which evidence would you request next?",
+      "options": [
+        "Request CCTV footage from the mall security for 2100-2145 hrs",
+        "Immediately obtain CDR for the victim's phone",
+        "Ignore CCTV and focus on witness sketches",
+        "Send team to search Old Bridge area only"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CCTV is time-sensitive and likely to show the suspects or bike; request it immediately.",
+      "next_info": "Mall security provides footage showing a red motorcycle with two riders; plate blurred but ending 'S'."
+    },
+    {
+      "id": "s3",
+      "info": "CCTV shows bike; witness mentions a nearby repair shop where a bike had its tail plate replaced.",
+      "question": "Next logical step?",
+      "options": [
+        "Visit the repair shop and check records/ask for recent sales",
+        "Arrest the mechanic immediately",
+        "Post suspect images on social media seeking IDs",
+        "Close the case due to lack of evidence"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Investigate leads — visit the shop and ask about recent buyers.",
+      "next_info": "Repair shop owner provides buyer name 'Amit Kumar' and a contact number."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "case_cyber_fraud",
+  "title": "Phishing/Cyber Fraud — Online Payment Theft",
+  "summary": "Complainant reports ₹50,000 debited from bank after clicking a suspicious link.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Victim reports SMS with payment link; they clicked and entered OTP. Bank shows transfer at 23:10 same night.",
+      "question": "Immediate next step?",
+      "options": [
+        "Request transaction logs and coordinate with bank",
+        "Arrest victim for negligence",
+        "Ignore and mark as user error",
+        "Publish victim's details online"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Coordinate with bank to obtain transaction logs and preserve evidence before it is lost.",
+      "next_info": "Bank provides transaction logs showing transfer to an account registered overseas; IP logs requested."
+    },
+    {
+      "id": "s2",
+      "info": "Bank logs point to an intermediary exchanger wallet. IP logs show an access from a public cybercafe near victim's city at 22:58.",
+      "question": "What should you do next?",
+      "options": [
+        "Request CCTV at the cybercafe and interview staff",
+        "Immediately seize all devices in the city",
+        "Blame the victim publicly",
+        "Close the case"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CCTV and witness interviews at the cybercafe can help identify the user who used the machine.",
+      "next_info": "Cybercafe staff provides a log showing a user at 22:55; further leads follow."
+    }
+  ]
+}
