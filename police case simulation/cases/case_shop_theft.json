@@ -1,0 +1,35 @@
+{
+  "id": "case_shop_theft",
+  "title": "Daytime Shop Theft — Corner Grocers",
+  "summary": "Store owner reports ₹10,000 missing from cash drawer during busy afternoon. CCTV shows a person loitering behind a shelf.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "FIR by shop owner: cash missing, no forced entry; CCTV shows person in staff uniform lingering near drawer.",
+      "question": "First step in investigation?",
+      "options": [
+        "Interview staff on duty and check roster",
+        "Immediately arrest the staff member seen in CCTV",
+        "Publish CCTV clip on social media for public ID",
+        "Ignore CCTV and call it a civil matter"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Interview staff and check records before taking coercive action.",
+      "next_info": "Staff interview reveals one temporary worker who arrived that day and handled cash."
+    },
+    {
+      "id": "s2",
+      "info": "Temporary worker claims he went for deliveries; no alibi. POS logs show drawer opened at 14:02 without transaction.",
+      "question": "Which evidence is most useful now?",
+      "options": [
+        "Collect POS logs and CCTV timestamps; preserve device",
+        "Demand immediate confession",
+        "Destroy POS logs",
+        "File a narcotics case instead"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Preserve POS logs and CCTV — these are crucial digital evidence.",
+      "next_info": "POS logs preserved; CCTV review shows worker accessing drawer when store was momentarily empty."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "case_demo_001",
+  "title": "Mobile Snatching near Market Road",
+  "summary": "Victim reported mobile snatching on 2025-11-20 at 2130 hrs near Market Road. Two suspects on a motorcycle.",
+  "stages": [
+    {
+      "id": "stage_1",
+      "info": "FIR received. Basic details: Victim name: Ramesh; Time: 2130; Place: Market Road; Two male suspects on a motorcycle. No eyewitness names provided.",
+      "question": "What is your immediate next step?",
+      "options": [
+        "Visit the Scene of Crime (SOC) and record observations",
+        "Collect CDRs immediately from the provider",
+        "File a charge sheet against unknown accused",
+        "Start media outreach for CCTV request"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Before technical requests, an SOC visit is mandatory to preserve evidence and gather witness names.",
+      "next_info": "SOC conducted: Nearby shopkeeper remembers a red motorcycle and a CCTV camera facing the road but says footage is stored offsite at the mall."
+    },
+    {
+      "id": "stage_2",
+      "info": "SOC report: Red motorcycle, partial number plate 'DL3S', CCTV at mall may have footage. Victim says snatched at 2130 and chased for 2 minutes; lost sight near Old Bridge.",
+      "question": "What will you request next?",
+      "options": [
+        "Request CCTV footage from the mall security for 2100-2145 hrs",
+        "Immediately obtain CDR for the victim's phone",
+        "Ignore CCTV and focus on witness sketches",
+        "Send team to search Old Bridge area only"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CCTV from the mall is the most time-sensitive and likely to show the suspects or bike. CDR is useful later if you have suspect numbers.",
+      "next_info": "Mall security provides footage showing a red motorcycle with two riders; rear rider wearing a black hoodie; number plate blurred but ending with 'S'."
+    },
+    {
+      "id": "stage_3",
+      "info": "Mall CCTV suggests bike and riders; no clear plate. A witness at Old Bridge reports a suspicious repair shop where a mechanic sold a pulsar with a replaced tail plate recently.",
+      "question": "Logical next step?",
+      "options": [
+        "Visit the repair shop and check records/ask for recent sales",
+        "Immediately arrest the mechanic",
+        "Post suspect images on social media seeking IDs",
+        "Close the case due to lack of evidence"
+      ],
+      "correct": 0,
+      "feedback_wrong": "You must investigate leads \u2014 visit the shop, ask about the buyer, and check if the bike matches CCTV.",
+      "next_info": "Repair shop owner provides a note with buyer name 'Amit Kumar' and a contact number. A quick check shows the number is active."
+    },
+    {
+      "id": "stage_4",
+      "info": "You have a name and contact number for a potential suspect. The bike model and timing match.",
+      "question": "Which legal/technical step is most appropriate now?",
+      "options": [
+        "Request CDR for the suspect number and get permission for a surveillance",
+        "Immediately raid the suspect's house without a warrant",
+        "Publish the suspect's name publicly and shame them",
+        "Do nothing \u2014 continue observation only"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CDR can show suspect's movements and calls around the crime time; ensure you follow legal process for requests.",
+      "next_info": "CDR shows the suspect's phone was near Market Road at 21:25-21:35 on the night. Surveillance leads to recovery of a bike matching CCTV; rear rider detained."
+    },
+    {
+      "id": "stage_5",
+      "info": "Suspect detained; victim identifies the rear rider in an identification parade. Bike recovered with stolen phone found in rear carrier.",
+      "question": "Final procedural step before charge-sheet?",
+      "options": [
+        "Complete investigation file, obtain forensic reports, and prepare charge-sheet",
+        "Release the suspect because identification parades are unreliable",
+        "Destroy all evidence",
+        "Convert FIR to a civil complaint"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Proper documentation and forensic corroboration are essential before filing charge-sheet.",
+      "next_info": "Forensics confirm phone and bike match; charge-sheet prepared and submitted."
+    }
+  ]
+}
