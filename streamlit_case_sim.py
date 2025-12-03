@@ -1,10 +1,12 @@
 # streamlit_case_sim.py
 # Police Case Simulator — loads separate JSON case files from ./cases/
+# Adds per-stage randomization of option order (stable during retries)
 # Run: streamlit run streamlit_case_sim.py
 
 import streamlit as st
 import json
 from pathlib import Path
+import random
 
 # ---------- Config ----------
 CASES_DIR = Path("cases")
@@ -81,6 +83,12 @@ st.write(case.get("summary", ""))
 
 # ---------- Helper to save changes to session state ----------
 def reset_case_state():
+    # clear shuffle keys for this case too
+    # iterate keys in st.session_state and pop those with this case prefix plus shuffle prefix
+    keys_to_remove = [k for k in st.session_state.keys() if k.startswith(state_prefix + "shuffled_options_") or k.startswith(state_prefix + "shuffled_correct_")]
+    for k in keys_to_remove:
+        del st.session_state[k]
+
     sset("stage_idx", 0)
     sset("score", 0.0)
     sset("history", [])
@@ -127,6 +135,33 @@ if history:
 # ---------- Current stage UI ----------
 if stage_idx < len(stages):
     stage = stages[stage_idx]
+
+    # --- RANDOMISE OPTIONS ONCE PER STAGE (stable during retries) ---
+    shuffle_key = f"shuffled_options_{stage_idx}"
+    correct_key = f"shuffled_correct_{stage_idx}"
+    full_shuffle_session_key = state_prefix + shuffle_key
+    full_correct_session_key = state_prefix + correct_key
+
+    if full_shuffle_session_key not in st.session_state:
+        # prepare shuffled options and compute new correct index
+        orig_options = stage.get("options", [])
+        # Defensive copy
+        options_shuffled = orig_options.copy()
+        random.shuffle(options_shuffled)
+        # find the text of the original correct option
+        orig_correct_idx = stage.get("correct", 0)
+        orig_correct_text = orig_options[orig_correct_idx] if 0 <= orig_correct_idx < len(orig_options) else None
+        # map to shuffled index
+        shuffled_correct_idx = options_shuffled.index(orig_correct_text) if orig_correct_text in options_shuffled else 0
+
+        # store in per-case session state
+        st.session_state[full_shuffle_session_key] = options_shuffled
+        st.session_state[full_correct_session_key] = shuffled_correct_idx
+
+    options = st.session_state[full_shuffle_session_key]
+    shuffled_correct_idx = st.session_state[full_correct_session_key]
+    # ----------------------------------------------------------------
+
     st.subheader(f"Stage {stage_idx + 1}")
     st.write(stage.get("info", ""))
     st.write("**Question:** " + stage.get("question", ""))
@@ -136,7 +171,7 @@ if stage_idx < len(stages):
     if attempts_list:
         st.write("Previous attempts for this stage:")
         for i, a_idx in enumerate(attempts_list, start=1):
-            choice_text = stage["options"][a_idx] if 0 <= a_idx < len(stage["options"]) else "Invalid choice"
+            choice_text = options[a_idx] if 0 <= a_idx < len(options) else "Invalid choice"
             st.write(f"- Attempt {i}: {choice_text}")
         st.write("---")
 
@@ -151,8 +186,8 @@ if stage_idx < len(stages):
                 "stage_idx": stage_idx,
                 "info": stage.get("info", ""),
                 "question": stage.get("question", ""),
-                "chosen": stage["options"][stage.get("correct")],
-                "chosen_idx": stage.get("correct"),
+                "chosen": options[shuffled_correct_idx],
+                "chosen_idx": shuffled_correct_idx,
                 "correct": True,
                 "attempts_count": attempts_count,
                 "next_info": stage.get("next_info", "")
@@ -167,6 +202,15 @@ if stage_idx < len(stages):
             sset("stage_recorded", sr)
 
         if st.button("Next Stage"):
+            # clear shuffle keys for this stage so next stage will generate new shuffle
+            # (remove specific keys for this stage)
+            k1 = state_prefix + f"shuffled_options_{stage_idx}"
+            k2 = state_prefix + f"shuffled_correct_{stage_idx}"
+            if k1 in st.session_state:
+                del st.session_state[k1]
+            if k2 in st.session_state:
+                del st.session_state[k2]
+
             sset("stage_idx", stage_idx + 1)
             sset("stage_solved", False)
             sset("last_hint", "")
@@ -178,14 +222,15 @@ if stage_idx < len(stages):
         if sget("last_hint"):
             st.info("Hint: " + sget("last_hint"))
 
-        # submission form
+        # submission form uses shuffled options
         with st.form(key=f"form_stage_{stage_idx}"):
-            choice = st.radio("Choose next step", stage.get("options", []), index=0, key=f"choice_{stage_idx}")
+            choice = st.radio("Choose next step", options, index=0, key=f"choice_{stage_idx}")
             submitted = st.form_submit_button("Submit Answer")
 
         if submitted:
+            # determine selected index within shuffled options
             try:
-                selected_idx = stage["options"].index(choice)
+                selected_idx = options.index(choice)
             except Exception:
                 selected_idx = -1
 
@@ -196,7 +241,8 @@ if stage_idx < len(stages):
             sset("last_submitted_idx", selected_idx)
             sset("just_submitted", True)
 
-            if selected_idx == stage.get("correct"):
+            # compare against shuffled correct index
+            if selected_idx == shuffled_correct_idx:
                 sset("score", sget("score") + 1.0)
                 sset("stage_solved", True)
                 # clear hint
@@ -204,9 +250,10 @@ if stage_idx < len(stages):
                 attempts_count = len(sget("attempts").get(str(stage_idx), []))
                 st.success(f"Correct. Stage solved in {attempts_count} attempt(s). Review next info and click 'Next Stage' to continue.")
                 st.write("**Next info:** " + stage.get("next_info", ""))
+                # force immediate rerun so the 'Next Stage' UI shows in same click
                 st.rerun()
             else:
-                # incorrect -> set hint, do not rerun here (form already caused a re-run)
+                # incorrect -> set hint, do not rerun here (form submit already reruns)
                 hint = stage.get("feedback_wrong", "Incorrect. Try again.")
                 sset("last_hint", hint)
                 st.error("Incorrect. Try again.")
