@@ -1,0 +1,91 @@
+{
+  "id": "case_snatching",
+  "title": "Mobile Snatching Near Sec-12 Market, Karnal",
+  "summary": "Victim’s mobile was snatched by two youths on a red motorcycle near Sector 12 Market, Karnal at 21:30 hrs.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Victim: Ramesh Kumar, 32\nIncident: Sec-12 Market, Karnal\nTwo youths on a red motorcycle fled towards Sec-9.\nFIR lodged at PS Sec-13.",
+      "question": "What should be the FIRST investigative action?",
+      "options": [
+        "Obtain CCTV coverage of entire Sec-12 market lane before it gets overwritten",
+        "Apply for CDR of victim's phone immediately",
+        "Issue wireless message to all districts",
+        "Call victim to police station again for details"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CCTV is time-sensitive; securing it immediately is mandatory.",
+      "next_info": "CCTV shows red bike moving towards Sec-9 with partial plate HR05T9."
+    },
+    {
+      "id": "s2",
+      "info": "Partial plate: HR05T9. CCTV shows suspects taking turn towards Shiv Colony.",
+      "question": "Next step?",
+      "options": [
+        "Collect CCTV from adjacent stretches to build continuous movement trail",
+        "Immediately raid Shiv Colony without confirming direction",
+        "Alert all Delhi borders",
+        "Rely solely on witness descriptions"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Continuous CCTV trail building is vital for movement reconstruction.",
+      "next_info": "New CCTV shows bike entering lane behind Arun Chowk."
+    },
+    {
+      "id": "s3",
+      "info": "Bike seen near Arun Chowk.\nNearby repair shops exist where plates are frequently altered.",
+      "question": "Best next investigative move?",
+      "options": [
+        "Verify local repair shops for recent number-plate related work",
+        "Order mass checking at Karnal bus stand",
+        "Ask the victim to look for suspects in markets",
+        "Focus exclusively on missing bike complaints"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Repair shops often hold key clues in plate tampering.",
+      "next_info": "One shopkeeper confirms two youths replaced a number plate yesterday."
+    },
+    {
+      "id": "s4",
+      "info": "Repair shop owner gives description of youth: one in black hoodie, another tall, slim.\nProvided a phone number used for payment via UPI.",
+      "question": "Your next step?",
+      "options": [
+        "Obtain UPI transaction details and link the phone number",
+        "Arrest the shopkeeper for helping criminals",
+        "Start raids in all nearby villages",
+        "Call telecom companies for all subscriber data"
+      ],
+      "correct": 0,
+      "feedback_wrong": "UPI transaction logs help trace the registered user immediately.",
+      "next_info": "Phone number registered to a juvenile from Sector 4."
+    },
+    {
+      "id": "s5",
+      "info": "Phone registered to juvenile. Tower location shows last presence in Indri Road area.",
+      "question": "Next step?",
+      "options": [
+        "Coordinate with local team for discreet verification at known youth hangouts",
+        "Make public announcement with suspect name",
+        "Seal entire highway",
+        "Wait for juvenile to voluntarily appear"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Discreet local verification prevents alerting suspects.",
+      "next_info": "Juvenile located; admits involvement; leads police to co-accused."
+    },
+    {
+      "id": "s6",
+      "info": "Co-accused detained with the stolen phone.",
+      "question": "Final step?",
+      "options": [
+        "Follow JJ Act for juvenile & conduct lawful recovery proceedings",
+        "Threaten accused to confess",
+        "Skip documentation since phone is recovered",
+        "Hand over accused to victim for compromise"
+      ],
+      "correct": 0,
+      "feedback_wrong": "JJ Act compliance + lawful recovery is essential.",
+      "next_info": "Case successfully solved."
+    }
+  ]
+}

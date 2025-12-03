@@ -1,0 +1,91 @@
+{
+  "id": "case_hit_and_run",
+  "title": "Hit-and-Run Accident - Hisar",
+  "summary": "A pedestrian was hit near the Hisar Bus Stand and the vehicle sped away.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Accident at 20:10 hrs near Hisar Bus Stand.\nWitness says white SUV hit pedestrian and fled.\nVictim unconscious.",
+      "question": "First step?",
+      "options": [
+        "Ensure medical aid and alert traffic CCTV control",
+        "Wait for victim to regain consciousness",
+        "Let crowd handle the situation",
+        "Start checking random houses"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Saving life & capturing immediate CCTV trail is the priority.",
+      "next_info": "Victim taken to Hisar Medical; CCTV confirmed white Fortuner moving towards Sector 15."
+    },
+    {
+      "id": "s2",
+      "info": "CCTV trail shows Fortuner turning towards Sector 15.\nPlate partially visible: HR20F.",
+      "question": "Next step?",
+      "options": [
+        "Run plate recognition through VAHAN & check for similar Fortuners",
+        "Issue public notice asking driver to surrender",
+        "Wait for plate to become clearer later",
+        "Contact insurance companies unnecessarily"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Vehicle search through VAHAN helps narrow down possibilities.",
+      "next_info": "Shortlist: 4 Fortuners in Hisar with HR20F prefix."
+    },
+    {
+      "id": "s3",
+      "info": "Four shortlisted vehicles.\nOne registered in Sector 16 with previous rash driving challans.",
+      "question": "Next investigative step?",
+      "options": [
+        "Verify owner's location & check vehicle for fresh damage",
+        "Immediately arrest owner without verification",
+        "Call all owners to police station by night",
+        "Ignore the challan history"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Inspection of suspicious vehicles is needed before action.",
+      "next_info": "Owner not at home; neighbour saw Fortuner arriving with broken headlamp."
+    },
+    {
+      "id": "s4",
+      "info": "Vehicle seen returning with damage.",
+      "question": "Next step?",
+      "options": [
+        "Seize vehicle, document damage & call FSL team",
+        "Drive vehicle for evidence test yourself",
+        "Delay seizure till owner returns",
+        "Ignore FSL procedures"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Vehicle must be seized properly to preserve trace evidence.",
+      "next_info": "Vehicle seized; paint transfer matches victim's clothing."
+    },
+    {
+      "id": "s5",
+      "info": "Vehicle seized; damage matches accident.",
+      "question": "Next step?",
+      "options": [
+        "Trace driver through phone CDR & tower locations",
+        "Wait for owner to confess voluntarily",
+        "Call media to speculate",
+        "Let vehicle go without memo"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CDR helps identify who was using the phone & location at the time.",
+      "next_info": "CDR shows owner was in Hisar; friend’s number also present near accident site."
+    },
+    {
+      "id": "s6",
+      "info": "Owner claims friend was driving.",
+      "question": "Final action?",
+      "options": [
+        "Verify both statements & apply appropriate IPC sections",
+        "Arrest both immediately without evidence",
+        "Convince victim to withdraw FIR",
+        "Return seized vehicle immediately"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Statements must be verified before correct sections are applied.",
+      "next_info": "Investigation proceeds."
+    }
+  ]
+}

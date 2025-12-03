@@ -1,0 +1,91 @@
+{
+  "id": "case_domestic_violence",
+  "title": "Domestic Violence & Dowry Harassment - Gurugram",
+  "summary": "A woman alleges abuse, demand for cash, and assault by husband and in-laws.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Complainant: Neha, 28.\nAlleges harassment for ₹2 lakh & physical assault.\nMedical bruises visible.",
+      "question": "First procedure?",
+      "options": [
+        "Ensure medical MLC & record Section 161 statement promptly",
+        "Send complainant back to in-laws for compromise",
+        "File DDR only",
+        "Wait for husband to appear"
+      ],
+      "correct": 0,
+      "feedback_wrong": "MLC + statement collection are legally required.",
+      "next_info": "MLC done; doctor confirms assault marks."
+    },
+    {
+      "id": "s2",
+      "info": "MLC confirms injuries.\nComplainant alleges dowry demand for 2 years.",
+      "question": "Next step?",
+      "options": [
+        "Register FIR under relevant IPC + Dowry Act sections",
+        "Wait for family counselling first",
+        "Tell her to bring evidence herself",
+        "Ignore dowry allegations"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Dowry-related offences require timely FIR when prima facie made out.",
+      "next_info": "FIR registered against husband, mother-in-law & brother-in-law."
+    },
+    {
+      "id": "s3",
+      "info": "Accused not present at home.\nNeighbour confirms frequent fights.",
+      "question": "Your action?",
+      "options": [
+        "Issue notice u/s 41A CrPC where applicable",
+        "Arrest entire neighbourhood",
+        "Pressure complainant to withdraw complaint",
+        "Close case immediately"
+      ],
+      "correct": 0,
+      "feedback_wrong": "41A notice needed for procedural compliance unless arrest justified.",
+      "next_info": "41A notices served; husband appears next day."
+    },
+    {
+      "id": "s4",
+      "info": "Husband appears; claims injuries were 'self-inflicted'.\nNo alibi.",
+      "question": "Next step?",
+      "options": [
+        "Collect phone chats, bills, jewellery receipts as corroborative evidence",
+        "Accept husband’s claim blindly",
+        "Force both parties to compromise",
+        "Let husband leave without inquiry"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Corroborative evidence strengthens the case.",
+      "next_info": "Chats recovered showing repeated demands for money."
+    },
+    {
+      "id": "s5",
+      "info": "Chats show demand for money.\nWoman feels unsafe.",
+      "question": "Next step?",
+      "options": [
+        "Inform Women Help Desk & ensure safe shelter if needed",
+        "Send her home with husband",
+        "Suggest ignoring chats as 'timepass'",
+        "Delay action"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Protection & support services are essential.",
+      "next_info": "Woman shifted to safe accommodation."
+    },
+    {
+      "id": "s6",
+      "info": "Evidence strong. Accused cooperating.",
+      "question": "Conclusion?",
+      "options": [
+        "Complete chargesheet with medico-legal evidence & digital proof",
+        "Drag case intentionally",
+        "Erase chats",
+        "Pressure complainant to compromise"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Proper chargesheet ensures justice.",
+      "next_info": "Case ready for trial."
+    }
+  ]
+}

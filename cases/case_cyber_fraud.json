@@ -1,0 +1,91 @@
+{
+  "id": "case_cyber_fraud",
+  "title": "UPI Phishing Fraud – Ambala",
+  "summary": "Victim lost ₹65,000 after clicking a fake UPI verification link.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Victim clicked link & entered OTP.\nMoney debited through UPI.\nReported within 1 hour.",
+      "question": "Immediate priority:",
+      "options": [
+        "Freeze beneficiary account via bank nodal officer",
+        "Collect victim’s mobile for FSL first",
+        "Ask victim to reinstall UPI app",
+        "Wait for 24 hours to confirm fraud"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Immediate freezing often recovers partial funds.",
+      "next_info": "₹18,000 still present in mule wallet."
+    },
+    {
+      "id": "s2",
+      "info": "Mule wallet identified; KYC appears suspicious.",
+      "question": "Next step?",
+      "options": [
+        "Request full wallet KYC + login IP logs from provider",
+        "Wait for wallet company to voluntarily contact you",
+        "Seize victim's SIM card immediately",
+        "Ask victim to arrange meeting with fraudster"
+      ],
+      "correct": 0,
+      "feedback_wrong": "IP logs help trace device & location.",
+      "next_info": "IP traced to café in Rajpura."
+    },
+    {
+      "id": "s3",
+      "info": "IP used from Rajpura cybercafé.",
+      "question": "Your action?",
+      "options": [
+        "Seize café CCTV + user register & examine time-matched logs",
+        "Seal café immediately without checking logs",
+        "Ask café owner to identify suspect from memory",
+        "Invite café owner to police station daily"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CCTV + user logs give hard evidence.",
+      "next_info": "CCTV shows male using terminal at 22:55."
+    },
+    {
+      "id": "s4",
+      "info": "User registered with Aadhar-based login.",
+      "question": "Next step?",
+      "options": [
+        "Verify Aadhar-linked mobile & check for past cyber offences",
+        "Publish suspect's Aadhar on social media",
+        "Ignore Aadhar linkage",
+        "Depend only on CCTV frame"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Cross-checking linked number reveals patterns & past cases.",
+      "next_info": "Same number linked to 2 older frauds."
+    },
+    {
+      "id": "s5",
+      "info": "Number linked to prior frauds in Ambala Cantt.",
+      "question": "Next action?",
+      "options": [
+        "Coordinate with Cantt police & plan targeted raid",
+        "Wait for suspect to commit another fraud",
+        "Arrest café owner",
+        "Ask victim to keep calling suspect"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Inter-district coordination is essential.",
+      "next_info": "Raids lead to detention of primary operator."
+    },
+    {
+      "id": "s6",
+      "info": "Device seized from accused.\nContains phishing templates.",
+      "question": "Now?",
+      "options": [
+        "Send device for digital forensic imaging & update banks",
+        "Allow suspect to format phone",
+        "Return device to victim",
+        "Skip forensic chain documentation"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Digital forensics + proper chain maintains evidentiary integrity.",
+      "next_info": "Case ready for prosecution."
+    }
+  ]
+}

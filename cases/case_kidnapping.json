@@ -1,0 +1,105 @@
+{
+  "id": "case_kidnapping",
+  "title": "Kidnapping for Ransom - Rohtak",
+  "summary": "A 14-year-old boy is reported missing from Rohtak. Family receives a ransom call two hours later demanding ₹5 lakhs.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Boy (14) missing from outside tuition centre near Delhi Road, Rohtak.\nMissing for 90 minutes.\nMother received suspicious call asking if the child had 'reached home'.",
+      "question": "What should be your FIRST official step?",
+      "options": [
+        "Register FIR promptly & begin parallel search operations",
+        "Wait 24 hours before registering FIR",
+        "Tell family to search neighborhood on their own",
+        "Hold press briefing immediately"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Kidnapping of minor requires immediate FIR and search as per law; delay is unlawful.",
+      "next_info": "FIR registered. Local inquiry reveals a white Swift car near the tuition centre around the same time."
+    },
+    {
+      "id": "s2",
+      "info": "Witness says a white Swift with tinted windows was seen repeatedly circling the area.",
+      "question": "Best next investigative step?",
+      "options": [
+        "Obtain nearby CCTV footage & trace vehicle path",
+        "Set up nakas in entire Haryana blindly",
+        "Call vehicle owner records department without any details",
+        "Wait for ransom call before doing anything"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CCTV tracing is the quickest way to confirm movement and registration details.",
+      "next_info": "CCTV shows Swift heading towards Jhajjar Road with partial plate HR12."
+    },
+    {
+      "id": "s3",
+      "info": "CCTV: Swift moving towards rural road.\nFamily receives ransom call: demand ₹5 lakhs; boy crying in background.",
+      "question": "Strategy now?",
+      "options": [
+        "Record ransom call, involve cyber team for virtual number tracing",
+        "Ask family to negotiate directly without police monitoring",
+        "Arrange ransom money and wait without logging evidence",
+        "Start random raids in Rohtak city"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Ransom calls must be recorded and traced with cyber support.",
+      "next_info": "Call traced to temporary SIM activated with forged Aadhaar near Meham."
+    },
+    {
+      "id": "s4",
+      "info": "SIM activation shop in Meham confirms fake Aadhaar used by two youths.",
+      "question": "Logical next step?",
+      "options": [
+        "Obtain CCTV & take statement of SIM seller immediately",
+        "Arrest SIM seller without checking evidence",
+        "Ignore SIM activation lead",
+        "Start combing operations without intel"
+      ],
+      "correct": 0,
+      "feedback_wrong": "SIM sellers are key witnesses & CCTV can reveal faces.",
+      "next_info": "CCTV shows two suspects, one wearing a distinctive yellow hoodie."
+    },
+    {
+      "id": "s5",
+      "info": "Suspects seen near Meham.\nLast tower dump shows mobile near Chiri village.",
+      "question": "What should be done next?",
+      "options": [
+        "Deploy discreet teams near Chiri & verify abandoned structures",
+        "Launch loud siren search in entire district",
+        "Delay action to avoid disturbing suspects",
+        "Circle only the main highway points"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Discreet close-range reconnaissance is essential to avoid harming the child.",
+      "next_info": "Teams find tyre marks near a cattle shed; boy's slipper found."
+    },
+    {
+      "id": "s6",
+      "info": "Evidence suggests boy is held in or near old cattle shed.",
+      "question": "Next operational step?",
+      "options": [
+        "Silent cordon & containment operation, then tactical entry",
+        "Rush entire police team with loud speakers",
+        "Ask family to approach kidnappers directly",
+        "Wait overnight to act in daylight"
+      ],
+      "correct": 0,
+      "feedback_wrong": "High-risk rescue demands silent cordon & controlled entry.",
+      "next_info": "Cordon executed; boy rescued safely. Two accused flee."
+    },
+    {
+      "id": "s7",
+      "info": "Boy rescued. Two accused absconding.",
+      "question": "Final step?",
+      "options": [
+        "Register supplementary sections, launch manhunt & freeze suspect assets",
+        "Close case as 'solved' because child is back",
+        "Pressure victim family to withdraw FIR",
+        "Ignore absconding accused"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Absconding accused must be traced and supplementary investigation completed.",
+      "next_info": "Investigation continues; manhunt teams deployed."
+    }
+  ]
+}

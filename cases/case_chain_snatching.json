@@ -1,0 +1,91 @@
+{
+  "id": "case_chain_snatching",
+  "title": "Chain Snatching Gang – Faridabad",
+  "summary": "Repeated chain snatching incidents near Neelam Chowk and Badhkal.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "3 chain snatching cases reported in 48 hours.\nVictims: women returning from markets.\nSuspects on black Splendor.",
+      "question": "What do you do first?",
+      "options": [
+        "Map incidents & check hotspot patterns via Crime Mapping",
+        "Randomly raid nearby slums",
+        "Wait for next incident",
+        "Issue press note immediately"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Hotspot mapping helps identify pattern routes.",
+      "next_info": "Pattern shows suspects using Badhkal–Sec 21 road repeatedly."
+    },
+    {
+      "id": "s2",
+      "info": "Pattern roadway identified.\nCCTV available at two chowks.",
+      "question": "Next step?",
+      "options": [
+        "Obtain CCTV & match riding posture/vehicle features",
+        "Ask victims to identify suspects without any photo",
+        "Ignore CCTV",
+        "Focus on unrelated cases"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Posture and vehicle traits help develop leads.",
+      "next_info": "CCTV shows bike with missing side mirror, partial plate HR51AX."
+    },
+    {
+      "id": "s3",
+      "info": "Partial plate HR51AX.\nShortlist: 6 Splendors in Faridabad.",
+      "question": "Your response?",
+      "options": [
+        "Verify ownership & check vehicles for modifications",
+        "Arrest all 6 owners immediately",
+        "Drop investigation",
+        "Publicly shame owners"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Verification narrows down suspects responsibly.",
+      "next_info": "One owner reports bike stolen a week ago."
+    },
+    {
+      "id": "s4",
+      "info": "Owner says bike stolen.\nBike may be used by snatching gang.",
+      "question": "Next step?",
+      "options": [
+        "Track bike’s movement using FSL fingerprint on mirrors/handles",
+        "Pressure owner for confession",
+        "Ignore lead",
+        "Seize random vehicles"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Stolen bike often holds forensic clues.",
+      "next_info": "Lifted latent prints match juvenile offender from previous case."
+    },
+    {
+      "id": "s5",
+      "info": "Prints match juvenile from 2024 snatching case.",
+      "question": "Next step?",
+      "options": [
+        "Locate associates & run covert surveillance on known hideouts",
+        "Arrest juvenile’s entire family",
+        "Call media",
+        "Wait for next snatching"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Surveillance helps catch active gang members.",
+      "next_info": "Surveillance finds gang preparing for next snatching."
+    },
+    {
+      "id": "s6",
+      "info": "Gang spotted preparing for snatching.",
+      "question": "Action?",
+      "options": [
+        "Conduct safe apprehension with backup and secure evidence",
+        "Charge with shoot-to-kill orders",
+        "Let them escape to gather more data",
+        "Ask suspects to surrender politely"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Safe apprehension is the correct & legal approach.",
+      "next_info": "Gang arrested; bike + chains recovered."
+    }
+  ]
+}

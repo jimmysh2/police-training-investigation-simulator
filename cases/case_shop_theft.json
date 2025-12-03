@@ -1,0 +1,77 @@
+{
+  "id": "case_shop_theft",
+  "title": "Cash Theft from Grocery Shop, Sonipat",
+  "summary": "₹12,000 stolen from cash drawer at Corner Grocers during afternoon rush.",
+  "stages": [
+    {
+      "id": "s1",
+      "info": "Shop drawer opened without transaction.\nTemporary worker was present.\nCCTV shows him lingering.",
+      "question": "Most appropriate first step?",
+      "options": [
+        "Conduct staff roster verification + interview all employees present",
+        "Arrest temporary worker immediately",
+        "Ask owner to check drawer again later",
+        "File a DDR only"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Interview + roster verification avoids premature arrest.",
+      "next_info": "Worker missing since incident. Phone switched off."
+    },
+    {
+      "id": "s2",
+      "info": "CCTV has evidentiary value. Shows worker opening drawer.",
+      "question": "Next action?",
+      "options": [
+        "Seize CCTV footage formally with hash value & proof of origin",
+        "Take photos of CCTV screen and return",
+        "Ask owner to preserve footage himself",
+        "Ignore footage until worker is found"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Formal seizure prevents future allegations of tampering.",
+      "next_info": "Seized CCTV shows worker leaving hurriedly with envelope."
+    },
+    {
+      "id": "s3",
+      "info": "Worker’s last phone activity: Murthal tower.",
+      "question": "Best investigative step?",
+      "options": [
+        "Analyze CDR + last tower location and coordinate with Murthal PP",
+        "Visit worker’s Facebook to check recent posts",
+        "Call relatives repeatedly",
+        "Freeze worker’s bank account immediately"
+      ],
+      "correct": 0,
+      "feedback_wrong": "CDR + coordination gives actionable geographic leads.",
+      "next_info": "Family in Ganaur confirms he returned with extra cash."
+    },
+    {
+      "id": "s4",
+      "info": "Family confirms boy returned home with envelope.",
+      "question": "Next step?",
+      "options": [
+        "Conduct lawful search/recovery as per procedure",
+        "Threaten family members to produce him",
+        "Wait for him to come voluntarily",
+        "Call media persons"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Recovery must follow proper CrPC guidelines.",
+      "next_info": "Worker admits theft & money recovered."
+    },
+    {
+      "id": "s5",
+      "info": "Money recovered. Worker confesses.",
+      "question": "Final legal action?",
+      "options": [
+        "Complete arrest & recovery memo and file chargesheet",
+        "Release him after warning",
+        "Pressure owner to settle",
+        "Erase CCTV to avoid storing evidence"
+      ],
+      "correct": 0,
+      "feedback_wrong": "Proper documentation ensures conviction.",
+      "next_info": "Case concluded."
+    }
+  ]
+}
